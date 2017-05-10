@@ -1,0 +1,47 @@
+ul {
+	opacity: 0.7;
+	position: fixed;
+    top: 0;
+    width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000000;
+}
+
+li {
+	float:left;
+	display: inline;
+	box-sizing: border-box;
+}
+
+
+
+li a {
+	display: block;
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: right;
+	padding: 14px 16px;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+li a:hover{
+	color: #00A2FF;
+}
+
+li .napravo {
+	float: left;
+	display: inline;
+	box-sizing: border-box;
+	color: red;
+	background-color: red;
+}
+
+img {
+	max-height:20%;
+	height:10%;
+	width:100%;	
+}
