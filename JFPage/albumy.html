@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<title>Albumy</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">/*script pre rolovacie menu */
+	</script>
+	<script src="https://use.fontawesome.com/c62e354f4b.js">
+	</script><!-- Obrazok pre rolovacie menu -->
+	<meta charset="UTF-8">
+	<link href="css/design.css" rel="stylesheet" type="text/css">
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<script src="library/jquery.js">/*importovanie jquery*/</script>
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<header>
+		Albumy
+	</header>
+	<nav>
+		<ul>
+     		<li><a href="index.html">Domov</a></li>
+      		<li><a href="rhcp.html">RHCP</a></li>
+     		<li><a href="albumy.html">Albumy</a></li>
+      		<li><a href="galeria.html">Galéria</a></li>
+     		<li><a href="kontakty.html">Kontakty</a></li>
+   		</ul> <!-- Menu -->
+		<div class="handle">Menu
+				<div class="obrazokmenu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		</div>
+	</nav>
+	<section>
+		<h2 class="podnadpis">Niandra Lades and Usually Just a T-Shirt</h2>
+		<p class="main">Tento debutový sólový album Fruscianteho vznikol vďaka podpore Fruscianteho priateľov, ktorí tvrdili, že dnes už neexistuje dobrá hudba. Album bol vydaný 4. novembra 1994. Kvôli slabým predajom bol stiahnutý z obchodov, len aby sa do nich naspäť vrátil v roku 1999. Prvá polovica bola nahraná v roku 1992, druhá bola nahraná počas koncertovania albumu Blood Sugar Sex Magik, ktorý nakoniec viedol k jeho odchodu z RHCP.</p><img alt="Obal albumu" class="albumy" src="albumy/niandra.jpg">
+		<p class="main">Album sa síce nestretol s veľkým verejným úspechom, avšak kritici mali zväčša pozitívny názor. Predpokladalo sa, že sa predalo iba okolo 45 000 kópií, keď v roku 1998 Frusciante požiadal o zástavu tlače.</p>
+		<h2 class="podnadpis">Curtains</h2>
+		<p class="main">Curtains je v poradí siedmy sólový album, ktorý bol vydaný 1. februára 2005. Bol nahraný za necelých 10 dní v obývačke Frusciantoveho domu. "Len som sedel na vankúši a opieral som sa o gauč." Na albume sa taktiež objavil gitarista kapely The Mars Volta a Fruscianteho priateľ Omar Rodriguez-Lopez. V pesničkách "Lever Pulled" a "Anne" sólovali spoločne, pričom používali iba jeden zosilovač.</p><img alt="Obal albumu" class="albumy" src="albumy/curtains.jpg">
+		<p class="main">Na rozdiel od väčšiny Fruscianteho sólovej práce, tento album je z väčšej časti akustický. Je to jeho najkrajší a zároveň najsmutnejší album, ktorý znie skôr ako Cat Stevens ako Jimi Hendrix. Napriek krásnym gitarovým častiam, centrom pozornosti by mali byť texty piesní.</p>
+		<h2 class="podnadpis">The Empyrean</h2>
+		<p class="main">The Empyrean je ôsmy sólový album, ktorý bol nahraný počas prestávky RHCP po vydaní albumu Stadium Arcadium. Tento album bol nahrávaný s prestávkami od roku 2006 až 2008. Na tomto albume sa podieľalo mnoho muzikantov ako Flea, Josh Klinghoffer alebo Johnny Marr.</p><img alt="Obal albumu" id="empyrean" src="albumy/empyrean.jpg">
+		<p class="main">Frusciante si v živote prešiel peklom, čo sa odráža na textoch jeho piesní, ktoré sa menia na rozprávky a neskutočné zážitky a interakcie s inými duchmi a dimenziami. The Empyrean ponúka krátky pohľad na psychické a duševné výlevy Fruscianteho hlavy.</p>
+	</section>
+	<script>
+	$(".handle").on( "click", function() {
+            $("nav ul").toggleClass("showing");
+        }); // script na aktivovanie rolovacieho menu klikom
+	</script>
+	<footer>
+		<p class="footer">© 2016-2017 All rights reserved, Branislav Bilý</p>
+	</footer>
+</body>
+</html>
