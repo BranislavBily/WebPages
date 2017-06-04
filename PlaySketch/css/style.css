@@ -1,0 +1,511 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+|body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a:link {
+	text-decoration: none;
+	color: inherit; /* ziadne podciarkovania ani podobne veci
+	kazdy link nech ma farbu toho segmentu v ktorom sa nachadza */
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+table, th, td {
+	margin-left: 176px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	/*176px zarovnanie ktore funguje, collapse zabranuje dvom ciaram vedla seba */
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+i {
+	float:left; /*Obrazku ku kontaktom */
+	margin-right: 5px;
+}
+
+header {
+	background: rgb(153,153,153); /* Old Browsers */
+	background: -webkit-linear-gradient(top right,rgb(153,153,153),rgb(203,201,201)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top right,rgb(153,153,153),rgb(203,201,201)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top right,rgb(153,153,153),rgb(203,201,201)); /*Fx 3.6-15*/
+	background: linear-gradient(top right, rgb(153,153,153), rgb(203,201,201)); /*Standard*/	opacity: 0.9;
+	width: 100%;
+	padding: 40px 0;
+	/* 40 hore a dole 0 po stranach */
+	text-align: center;
+	color: white;
+}
+
+nav ul {
+	width: inherit;
+	background-color: #404040;
+	position: relative;
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	opacity: 0.7;
+	-webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s; /*Transition na rozne prehliadace, 0.4 sekund fungu
+	je zlata stredna cesta. Opacity sluzi ako zmena farby kedze nechcem mat fixnute menu */
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px; /*Samotne menu */
+}
+
+nav ul li:hover {
+	opacity: 0.75; /*Jemne tmavsi odtien sivej ked prejde mys nad odkaz na podstranku */
+}
+
+h3 {
+	text-align: center;
+	width: 320px;
+}
+
+p {
+	font-size: .9em;
+	text-align: center;
+	width: 320px;
+}
+
+section {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    width: 75%;
+    margin: 2% 12.5% 0 12.5%;
+    text-align: center;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	font-size: 3.5em;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+	font-family: 'Slabo 27px', serif; /* Trosku upravene zakladne hodnoty h1 nadpisu
+	spolocne aj s inym fontom */
+}
+
+img {
+	margin-left: 3px;
+}
+
+.container {
+	background-color: #f0f0f0;
+}
+
+.h2canvas {
+	padding-top: 4%;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+
+#Under_Construction {
+	margin-left: 35%;
+	margin-top: 5%;
+}
+
+.formulka {
+	width: 20%;
+	position: absolute;
+	left: 20px;
+}
+
+.footer {
+	display: block;
+	text-align: center;
+	color: #535353;
+	margin-top: 100px; /*footer s odstupom z hora, siva farba */
+}
+
+
+
+.myForm {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 0.8em;
+	width: 23em;
+	padding: 1em;
+	border: 1px solid #ccc;
+	margin-left: 300px;
+	margin-top: 5px;
+}
+
+.myForm * {
+	box-sizing: border-box;
+}
+
+.myForm fieldset {
+	border: none;
+	padding: 0;
+}
+
+.myForm legend, .myForm label {
+	padding: 0;
+	font-weight: bold;
+}
+
+.myForm label.choice {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.myForm input[type="text"], .myForm input[type="tel"], .myForm input[type="email"], .myForm input[type="datetime-local"], .myForm select, .myForm textarea {
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 0.9em;
+	padding: 0.3em;
+}
+
+.myForm textarea {
+	height: 100px;
+}
+
+.myForm button {
+	padding: 1em;
+	border-radius: 0.5em;
+	background: #eee;
+	border: none;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+.myForm button:hover {
+	background: #ccc;
+	cursor: pointer;
+}
+
+
+.galeria {
+	margin: 30px auto 0; /*auto to zarovna do stredu elementu v ktorom sa galeria nachadza */
+	height: 300px;
+}
+
+.fa fa-bars{
+	float: right; /*Obrazok menu v menu */
+}
+
+.fotky li {
+	float: left;
+	margin: 12px; /* Samotne fotky */
+	list-style-type: none;
+}
+
+.fotky img {
+	display: block;
+	padding: 4px;
+	background: #898686; /*vsetky obrazky v classe fotky maju padding */
+}
+
+.fotky img:hover {
+	background: #5B5959; /*padding zmavne ked hover */
+}
+
+.tetrs {
+	display: flex;
+}
+
+.play {
+	width: 325px;
+	height: 100px;
+	background-color: #505050;
+	clear: left;
+	float: right;
+	margin-left: 27.5%;
+	margin-right: 27.5%;
+	margin-top: 0;
+	margin-bottom: 10%;
+}
+
+.play h3 {
+	text-align: center;
+	font-size: 20px;
+	padding: 12% 0;
+	color: #BFBFBF;
+}
+
+.podnadpis {
+	display: block;
+	font-size: 1.5em;
+	margin-top: 2em;
+	margin-bottom: 0.83em;
+	margin-left: 10px;
+	margin-right: 0;
+	font-weight: bold;
+	font-family: 'Slabo 27px', serif; /*Upraveny h2 nadpis spolocne aj so
+	zmenenym fontom */
+}
+
+.handle {
+	width: 100%;
+	color: white;
+	background-color: #404040;
+	opacity: 0.75;
+	text-align: left;
+	box-sizing: border-box;
+	/*100 sirka a paddding by pretekala */
+	padding: 15px 10px;
+	cursor: pointer;
+	display: none; /*skryty element pokial je stranka sirsia ako 1000px
+	biela farba textu, cierne pozadie s priesvitnostou,zmeni kurzor  */
+}
+
+.obrazokmenu {
+	float: right;
+}
+
+.hry {
+	width: 80%;
+	margin-top: 5%;
+	margin-left: 12%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows : auto;
+	grid-row-gap: 2rem;
+}
+
+.hra {
+	padding: 1px 1px 1px 1px;
+	height: 200px;
+	width: 330px;
+	margin-top: 20px;
+}
+
+.hra:hover {
+	padding: 0 0 0 0;
+	border: 1px solid grey;
+	border-radius: 8px;
+	background-color: white;
+}
+
+.main {
+	background-color: #ffffff;
+	margin-left: 20%;
+}
+
+.main a:link {
+	color: #828282;
+	text-decoration: none;
+	font-weight: bold; /*linky na ine podstranky alebo stranky su vyznacene v texte */
+}
+
+
+@media screen and (min-width: 321px) {
+	.hry {
+		margin: 0;
+		margin-left: 6px;
+	}
+	h3 {
+		float: right;
+	}
+	#Under_Construction {
+	margin-left: 20%;
+	}
+	canvas {
+		margin: 0;
+	}
+	.headline h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .headline h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+	.hry {
+		margin-left: 25%;
+	}
+	canvas {
+		margin: 0;
+	}
+}
+
+
+@media (min-width: 650px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    padding: 0;
+  }
+  .headline h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width:761px) {
+	.hry {
+		margin-left: 8%;
+		grid-template-columns: 1fr 1fr;
+	}
+	.hra {
+		width: 330px;
+	}
+	canvas {
+		margin: 0 10% 0 21%;
+	}
+}
+
+@media (min-width:844px) {
+	.hry {
+		margin-left: 13%;
+		grid-template-columns: 1fr 1fr;
+	}
+	.hra {
+		width: 330px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav ul {
+		max-height: 0;
+		/*lepsie ako nastavovanie vysky, moze zabranit komplikaciam*/
+	}
+	.showing {
+		max-height: 25em;
+	}
+	nav ul li {
+		width: 100%;
+		box-sizing: border-box;
+		/*100 sirka a paddding by pretekala */
+		padding: 15px;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.main {
+		font size: 20px; /*zmeni sa velkost pisma */
+	}
+	.handle {
+		display: block;
+	} /*bez tohto to zmizne */
+}
+
+@media (min-width:1025px) {
+	.hry {
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: 10%;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	nav {
+		font-size: 1.2em;
+	}
+	canvas {
+		margin: 0 20% 0 28%;
+	}
+	.hra {
+		width: 330px;
+	}
+	#Under_Construction {
+	margin-left: 28%;
+	}
+
+	.play {
+	width: 325px;
+	height: 100px;
+	background-color: #505050;
+	clear: left;
+	float: right;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 0;
+	margin-bottom: 10%;
+}
+
+.play h3 {
+	text-align: center;
+	font-size: 30px;
+	padding: 12% 0;
+	color: #BFBFBF;
+ }
+}
+
+.grid {
+  padding: 1rem;
+}
+
+
+.headline {
+  -ms-grid-row: 1;
+      grid-row: 1;
+  -ms-grid-column-span: 10;
+  -ms-grid-column: 2;
+      grid-column: 2/span 10;
+}
+.headline h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.article {
+  -ms-grid-row: 3;
+      grid-row: 3;
+  -ms-grid-column-span: 10;
+  -ms-grid-column: 2;
+      grid-column: 2/span 10;
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
+  -webkit-column-width: 250px;
+     -moz-column-width: 250px;
+          column-width: 250px;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.article p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #444;
+}
+.article p:first-child {
+  margin-top: 0;
+}
+
+.article h2 {
+	text-align: center;
+}
+
+.link:link {
+	color: #B3B3B3;
+}

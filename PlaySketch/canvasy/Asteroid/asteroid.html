@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Asteroid!</title>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://use.fontawesome.com/c62e354f4b.js"></script><!-- Obrazok pre rolovacie menu -->
+  <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <style>
+    canvas {
+      margin: 0 20% 0 28%;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 1%;
+      }
+   </style>
+<header>
+      <h2>PlaySketch<h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Domov</a></li>
+      <li><a href="../../tetris.html">FAQ</a></li>
+      <li><a href="../../playtetris.html">Tetris</a></li>
+      <li><a href="../../galeria.html">Galéria</a></li>
+      <li><a href="../../kontakty.html">Kontakty</a></li>
+    </ul> <!-- Menu -->
+    <div class="handle">Menu
+        <div class="obrazokmenu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    </div>
+  </nav>
+</head>
+<body>
+<h2> Práve hraješ Asteroid</h2>
+  <script language="javascript" type="text/javascript" src="../../kniznice/p5/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+<script language="javascript" type="text/javascript" src="asteroids.js"></script>
+<script language="javascript" type="text/javascript" src="laser.js"></script>
+<script language="javascript" type="text/javascript" src="ship.js"></script>
+<script src="../../js/js.js"></script>
+<script src="../../kniznice/jquery.js">/*importovanie jquery*/</script>
+<script>
+$(".handle").on( "click", function() {
+           $("nav ul").toggleClass("showing");
+       }); // script na aktivovanie rolovacieho menu klikom
+</script>
+</body>
+</html>

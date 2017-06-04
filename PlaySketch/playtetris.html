@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<title>TetrisMP!</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://use.fontawesome.com/c62e354f4b.js"></script><!-- Obrazok pre rolovacie menu -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<header>
+			<h2>PlaySketch<h2>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Domov</a></li>
+			<li><a href="tetris.html">FAQ</a></li>
+			<li><a href="playtetris.html">Tetris</a></li>
+			<li><a href="galeria.html">Galéria</a></li>
+			<li><a href="kontakty.html">Kontakty</a></li>
+		</ul> <!-- Menu -->
+		<div class="handle">Menu
+				<div class="obrazokmenu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		</div>
+	</nav>
+</head>
+<body>
+<img id="Under_Construction" src="galeria/Under_Construction_01.png" alt="Under_Construction" width="539" height="309">
+<script src="../../js/js.js"></script>
+<script src="kniznice/jquery.js">/*importovanie jquery*/</script>
+<script>
+	$(".handle").on( "click", function() {
+            $("nav ul").toggleClass("showing");
+        }); // script na aktivovanie rolovacieho menu klikom
+	</script>
+<footer>
+	<p class="footer"> © 2016-2017 All rights reserved, Branislav Bilý</p>
+</footer>
+</body>
+</html>

@@ -12,6 +12,17 @@
 	<img id="hambac" src="img/hamburger.png" height="20" width="20"/>
 	</a>
 </header>
+<section class="Heej">
+	<ul class="list">
+		<li>JA SOM TU NOVY</li>
+		<li>ZOZNAMIm SA RAD</li>
+		<li>JA SOM MALY ZOZNAMICEK</li>
+		<li>BUD MOJ KAMARAT</li>
+	</ul>
+	<section class="copy">
+
+	</section>
+</section>
 <nav>
 	<button onclick="myFunction()"><a href="#">I’ve spent the past two years looking for my ex-girlfriend’s killer…</a></button>
 	<div id="prve">But no one will do it.<br><br>- Anthony Jeselnik</div>
@@ -61,6 +72,12 @@ function myFunction2() {
         tri.style.display = 'none';
     }
 }
+var ul = $(".list"),
+    copy = $(".copy");
+ul.find(":nth-child(3)").appendTo(copy);
+
+copy.html (ul.find)
+
 $(header).slideToggle(1000);
 $(hambac).slideToggle(1000);
 </script>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<title>TetrisIt!</title>
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://use.fontawesome.com/c62e354f4b.js"></script><!-- Obrazok pre rolovacie menu -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<header>
+			<h2>PlaySketch<h2>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Domov</a></li>
+			<li><a href="tetris.html">FAQ</a></li>
+			<li><a href="playtetris.html">Tetris</a></li>
+			<li><a href="galeria.html">Galéria</a></li>
+			<li><a href="kontakty.html">Kontakty</a></li>
+		</ul> <!-- Menu -->
+		<div class="handle">Menu
+				<div class="obrazokmenu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		</div>
+	</nav>
+</head>
+<body>
+<div class="container">
+		<div class="hry">
+				<div class="hra">
+					<a href="canvasy/Pong/pong.html"><img src="galeria/ingame/Pong_01.png" alt="Pong hra" width="320" height="100"></a> 
+					<h3>Pong</h3>
+					<p>Známa Pong hra, pre jedného hráča. Pokús sa vyhrať proti silnému počítaču!</p>
+	        	</div>
+				<div class="hra">
+					<a href="canvasy/Minesweeper/minesweeper.html"><img src="galeria/ingame/Minesweeper_01.png" alt="Minesweeper_01 hra" width="320" height="100"></a> 
+					<h3>Minesweeper</h3>
+					<p>Zahraj si legendárnu hru Minesweeper. Dokážeš ju poraziť?</p>
+				</div>
+				<div class="hra">
+					<a href="canvasy/Tetris/tetris.html"><img src="galeria/ingame/Tetris_01.png" alt="Tetris hra" width="320" height="100"></a> 
+					<h3>Tetris</h3>
+					<p>Zahraj si najpredávanejšiu hru histórie, Tetris. Prekonaj svojho kamaráta na lokálnom multiplayer móde.</p>
+				</div>
+				<div class="hra">
+					<a href="canvasy/Snake/snake.html"><img src="galeria/ingame/Snake_01.png" alt="Snake hra" width="320" height="100"></a> 
+					<h3>Snake</h3>
+					<p>Pomôž Snakovi sa najesť, tak ako za starých čias na Nokii. Super zábavka ak sa niekde nudíš.</p>
+				</div>
+				<div class="hra">
+					<a href="canvasy/Asteroid/asteroid.html"><img src="galeria/ingame/Asteroid_01.png" alt="Asteroid hra" width="320" height="100"></a> 
+					<h3>Asteroid</h3>
+					<p>Ochrán svoju vesmírnu loď pred prichádzajúcimi meteoritmi!</p>
+				</div>
+				<div class="hra">
+					<a href="#"><img src="galeria/ingame/Agair_01.png" alt="Tetris hra" width="320" height="100"></a> 
+					<h3>Agair</h3>
+					<p>Zahraj si populárnu hru Agair vo svojom prehliadači!</p>
+				</div>
+				<div class="hra">
+					<a href="canvasy/TetrisSP/tetris.html"><img src="galeria/ingame/TetrisSP_01.png" alt="Tetris hra" width="320" height="100"></a> 
+					<h3>Tetris SP</h3>
+					<p>Ak nemáš kamarátov alebo sa proti tebe boja hrať, neboj sa a zahraj si Tetris sám!</p>
+				</div>
+		</div>
+		<footer>
+			<p class="footer"> © 2016-2017 All rights reserved, Branislav Bilý</p>
+		</footer>
+</div>
+<script src="js/js.js"></script>
+<script src="kniznice/jquery.js">/*importovanie jquery*/</script>
+<div class="fancybox">
+	<link rel="stylesheet" href="kniznice/jquery.fancybox.css" type="text/css" media="screen" /> <!--Priehladanie obrazkov-->
+	<script type="text/javascript" src="kniznice/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() { //script ktory zapne fancybox
+		$(".fancybox").fancybox();
+	});
+	</script>
+	<script>
+	$(".handle").on( "click", function() {
+            $("nav ul").toggleClass("showing");
+        }); // script na aktivovanie rolovacieho menu klikom
+	</script>
+</div>
+</body>
+</html>

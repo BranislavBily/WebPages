@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<title>Tetris</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://use.fontawesome.com/c62e354f4b.js"></script><!-- Obrazok pre rolovacie menu -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<header>
+			<h2>PlaySketch<h2>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Domov</a></li>
+			<li><a href="tetris.html">FAQ</a></li>
+			<li><a href="playtetris.html">Tetris</a></li>
+			<li><a href="galeria.html">Galéria</a></li>
+			<li><a href="kontakty.html">Kontakty</a></li>
+		</ul> <!-- Menu -->
+		<div class="handle">Menu
+				<div class="obrazokmenu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		</div>
+	</nav>
+</head>
+<body>
+<section class="galeria">
+		<h2 class="podnadpis"></h2>
+		<div class="fotky">
+			<ul>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Minesweeper_01.png" title="Dokončená hra v Minesweeper"><img alt="Proste Minesweeper" height="100" src="galeria/tn/Minesweeper_01.png" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/TetrisSP_01.png" title="Oddychovka pre jedného hráča"><img alt="Proste Tetris" height="100" src="galeria/tn/TetrisSP_01.png" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Minesweeper_02.png" title="Rozmýšlanie na plné obrátky"><img alt="Proste Minesweeper" height="100" src="galeria/tn/Minesweeper_02.png" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Minesweeper_03.png" title="Brain expanding"><img alt="Proste Minesweeper" height="100" src="galeria/tn/Minesweeper_03.png" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Pong_01.png" title="Počítač je prekvapivo veľmy dobrý"><img alt="Proste Pong" height="100" src="galeria/tn/Pong_01.png" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Pong_02.png" title="Hovoril som"><img alt="Proste Pong" height="100" src="galeria/tn/Pong_02.png" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Snake_01.png" title="Zábavka na dlhé jesenné večery"><img alt="Proste Snake" height="100" src="galeria/tn/Snake_01.png"" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Asteroid_01.png" title="Zábavka na dlhé letné večery"><img alt="Proste Asteroid" height="100" src="galeria/tn/Asteroid_01.png"" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Tetris_01.png" title="Najlepší spôsob ako naštvať kamaráta"><img alt="Proste Tetris" height="100" src="galeria/tn/Tetris_01.png" width="100"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="galeria/Tetris_02.png" title="Najlepší spôsob ako sa na seba naštvať"><img alt="Proste Tetris" height="100" src="galeria/tn/Tetris_02.png" width="100"></a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+<script src="js/js.js"></script>
+<script src="kniznice/jquery.js">/*importovanie jquery*/</script>
+<script>
+	$(".handle").on( "click", function() {
+            $("nav ul").toggleClass("showing");
+        }); // script na aktivovanie rolovacieho menu klikom
+	</script>
+<div class="fancybox">
+		<link href="kniznice/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css">
+		<script src="kniznice/jquery.fancybox.pack.js" type="text/javascript"> //Priehladanie obrazkov
+		</script>
+		<script type="text/javascript"> //script ktory zapne fancybox
+		  $(document).ready(function() {
+		      $(".fancybox").fancybox();
+		  });
+		</script>
+	</div>
+<footer>
+<p class="footer"> © 2016-2017 All rights reserved, Branislav Bilý</p>
+</footer>
+</body>
+</html>

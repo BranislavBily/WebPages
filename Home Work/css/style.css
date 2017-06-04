@@ -11,6 +11,19 @@ section {
 	display: block;
 }
 
+ul {
+	float: right;
+	margin: 10px 40px 20px 10px;
+}
+
+.Heej {
+	float: right;
+	margin: 10px 40px 20px 10px;
+}
+
+.copy {
+}
+
 img {
 	display: none;
 	position: absolute;
